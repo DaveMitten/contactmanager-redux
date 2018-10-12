@@ -9,7 +9,7 @@ class EditContact extends Component {
     errors: {}
   };
 
-  onSubmit = (e) => {
+  onSubmit = e => {
     e.preventDefault();
 
     const { name, email, phone } = this.state;
@@ -30,7 +30,7 @@ class EditContact extends Component {
       return;
     }
 
-    const updContact = {
+    const updateContact = {
       name,
       email,
       phone
